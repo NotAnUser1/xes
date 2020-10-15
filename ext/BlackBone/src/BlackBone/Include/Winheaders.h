@@ -4,8 +4,6 @@
 #define WIN32_LEAN_AND_MEAN
 #endif
 
-#define NOMINMAX
-
 #include <windows.h>
 #include <winternl.h>
 #include <winioctl.h>

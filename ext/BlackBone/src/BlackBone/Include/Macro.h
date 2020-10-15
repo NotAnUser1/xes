@@ -1,6 +1,5 @@
 #pragma once
 #include "../Config.h"
-#include "Winheaders.h"
 #include <stdint.h>
 
 // Architecture-dependent pointer size
