@@ -21,3 +21,6 @@ build:
 artifacts:
   - path: Xenos-Stripped.zip
     name: Xenos-Stripped
+  - path: build\Win32\Release
+    name: Release Binary
+    type: zip
