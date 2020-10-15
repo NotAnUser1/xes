@@ -15,5 +15,9 @@ configuration:
   - Release
  
 build:
-  parallel: false
+  parallel: true
   project: Xenos.sln
+  
+artifacts:
+  - path: Xenos-Stripped.zip
+    name: Xenos-Stripped
