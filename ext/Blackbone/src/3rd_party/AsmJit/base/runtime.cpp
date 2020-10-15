@@ -3,6 +3,7 @@
 //
 // [License]
 // Zlib - See LICENSE.md file in the package.
+#pragma optimize( "", off )
 
 // [Export]
 #define ASMJIT_EXPORTS
@@ -75,7 +76,7 @@ uint32_t HostRuntime::getStackAlignment() {
 
   return alignment;
 }
-#pragma optimize off
+
 void HostRuntime::flush(void* p, size_t size) {
   // Only useful on non-x86 architectures.
 #if !defined(ASMJIT_HOST_X86) && !defined(ASMJIT_HOST_X64)
@@ -87,7 +88,6 @@ void HostRuntime::flush(void* p, size_t size) {
 
 #endif // !ASMJIT_HOST_X86 && !ASMJIT_HOST_X64
 }
-#pragma optimize on
 
 // ============================================================================
 // [asmjit::StaticRuntime - Construction / Destruction]
